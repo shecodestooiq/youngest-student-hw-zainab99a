@@ -1,6 +1,6 @@
 function showYoungestStudent(students) { 
   if(students.length==0){
-    console.log("your array is empty");
+    console.log("No students provided");
   }
   //store the first value of array in empty var to compeare
   let min =students[0]
@@ -9,7 +9,7 @@ function showYoungestStudent(students) {
     let obj=students[i].age;
     if( obj < min ){
       min = obj
-      console.log("the youngest student is :",min.name);
+      console.log("the youngest student is :",students[i].name);
   }
 }
 }
