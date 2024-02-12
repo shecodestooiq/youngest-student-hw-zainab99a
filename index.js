@@ -4,7 +4,7 @@ function showYoungestStudent(students) {
   for (var i = 0; i < students.length; i++) {
     //this var take all of array elements to compeare it with min variable
     let obj=students[i].age;
-    if( obj <= min ){
+    if( obj < min ){
       min = obj
       console.log("the youngest student is :",students[i].name,min);
   }
