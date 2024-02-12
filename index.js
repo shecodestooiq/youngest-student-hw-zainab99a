@@ -1,4 +1,7 @@
 function showYoungestStudent(students) { 
+  if(students.length==0){
+    console.log("your array is empty");
+  }
   //store the first value of array in empty var to compeare
   let min =students[0].age
   for (var i = 0; i < students.length; i++) {
@@ -11,10 +14,12 @@ function showYoungestStudent(students) {
 }
 }
 
-  showYoungestStudent([ 
-    {name:"zainab",age:24},
-    {name:"yousif",age:28},
-    {name:"maryam",age:18},
-    {name:"ali",age:25}])
+const userDefinedStudents = [
+  { name: 'Alice', age: 25 },
+  { name: 'Bob', age: 2 },
+  { name: 'Charlie', age: 21 },
+];
+showYoungestStudent(userDefinedStudents);
+
 module.exports = showYoungestStudent;
 
