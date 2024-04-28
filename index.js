@@ -1,3 +1,8 @@
+let students = [
+  { name: 'Alice', age: 25 },
+  { name: 'Bob', age: 2 },
+  { name: 'Charlie', age: 21 },
+];
 function showYoungestStudent(students) { 
   if(students.length === 0){
     console.log("No students provided");
@@ -19,6 +24,6 @@ console.log("the youngest student is :" + name);
 }
 
 
-
+showYoungestStudent(students);
 module.exports = showYoungestStudent;
 
